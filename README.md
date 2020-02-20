@@ -27,4 +27,5 @@ void sendMsg(QString msg)
 void sendFullMsg(QByteArray json)
 {
     printFullMsg(json);
-}```
+}
+```
