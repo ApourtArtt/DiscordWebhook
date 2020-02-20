@@ -22,6 +22,11 @@ public:
         QFuture<void> f1 = QtConcurrent::run(printMsg, msg);
     }
 
+    void sendFullMsg(QByteArray json)
+    {
+        QFuture<void> f1 = QtConcurrent::run(printFullMsg, json);
+    }
+
 private:
     static void printMsg(QString msg)
     {
