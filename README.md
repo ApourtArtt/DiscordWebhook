@@ -18,7 +18,7 @@ void sendFullMsg(QByteArray json)
     QFuture<void> f1 = QtConcurrent::run(printFullMsg, json);
 }
 ```
-by
+to
 ```cpp
 void sendMsg(QString msg)
 {
